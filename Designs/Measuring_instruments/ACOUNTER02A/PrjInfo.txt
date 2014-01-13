@@ -1,0 +1,13 @@
+﻿[InfoShortDescription.en]
+Automatic Counter with PIC
+
+[InfoShortDescription.cs]
+Atomový čítač s PICem
+
+[InfoLongDescription.en]
+A Counter to 800 MHz synchonised by GPS 
+
+[InfoLongDescription.cs]
+Měřič frekvence do 800 MHz opřený o kmitočtový normál GPS.
+
+[End]
