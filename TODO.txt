@@ -1,0 +1,3 @@
+Doplnit zobrazeni casu na displeji. 
+Vypisovat namerene hodnoty spolecne s casem na seriovou linku
+Pridat funkci tlacitek, kdy se na zmacknuti tlacitka z gps vycte aktualni presny cas (melo by to byt vhodne pro znackovani udalosti). (Tohle by mela umet primo GPS, ma interrupt vstup)

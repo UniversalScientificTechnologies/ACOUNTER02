@@ -22,6 +22,10 @@
 int16 of=0; // count of overflow
 int1  flag; // flag for a blinking dot 
 
+// GPS setup for frequency measurement
+const char cmd[40]={0xB5, 0x62, 0x06, 0x31, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x32, 0x00, 0x00, 0x00, 0x80, 0x84, 0x1E, 0x00, 0xE0, 0xC8, 0x10, 0x00, 0x40, 0x42, 0x0F, 0x00, 0xA0, 0x86, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0xF7, 0x00, 0x00, 0x00, 0x12, 0x03};
+
+
 #int_EXT  // Interrupt from 1PPS
 void  EXT_isr(void) 
 {
@@ -84,8 +88,7 @@ void main()
    setup_ccp1(CCP_OFF);
    setup_comparator(NC_NC_NC_NC);// This device COMP currently not supported by the PICWizard
 
-  output_toggle(BEEP); // cvak...
-  printf("Cvak....");
+   output_toggle(BEEP); // cvak...
    
    ext_int_edge( L_TO_H );       // set 1PPS active edge
    enable_interrupts(INT_TIMER1);
@@ -93,6 +96,13 @@ void main()
    enable_interrupts(GLOBAL);
 
    lcd_init();
+   delay_ms(100);
+   lcd_putc("\f  ACOUNTER02A\n (c)mlab.cz 2014\n");
+
+
+   delay_ms(1000);      //wait for GPS init.
+   int n;
+   for (n=0;n<40;n++) putc(cmd[n]); // send setup to GPS
 
    lcd_putc("\fCvak...\nHmmm...\n");
 
