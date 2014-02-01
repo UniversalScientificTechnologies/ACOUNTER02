@@ -1,10 +1,10 @@
 [PROJECT]
-Target=D:\PIC\acounter\acounter.hex
+Target=acounter.hex
 Development_Mode=
 Processor_Text=PIC16F887
 ToolSuite=CCS
 Processor=0x887F
-[D:\PIC\acounter\acounter]
+[acounter]
 Type=4
 Path=
 FileList=
@@ -12,17 +12,19 @@ BuildTool=
 OptionString=
 AdditionalOptionString=
 [mru-list]
-1=D:\PIC\acounter\acounter.c
+1=acounter.c
 [Windows]
 0=0000 %S 0 0 796 451 3 0
 [Units]
 Link=0
 Count=1
-1=D:\PIC\acounter\acounter
+1=acounter
 [Opened Files]
 1=acounter.c
-2=
-3=C:\Program Files (x86)\PICC\devices\16F887.h
-4=..\counter\main.c
-5=C:\Program Files (x86)\PICC\examples\ex_str.c
-6=
+2=acounter.h
+3=C:\Program Files\PICC\devices\16F887.h
+4=C:\Program Files\PICC\drivers\string.h
+5=C:\Program Files\PICC\drivers\stddef.h
+6=C:\Program Files\PICC\drivers\ctype.h
+7=C:\Program Files\PICC\drivers\lcd.c
+8=
