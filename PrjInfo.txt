@@ -1,5 +1,5 @@
 ﻿[InfoShortDescription.en]
-Automatic Counter with PIC
+Atomic frequency  Counter with PIC
 
 [InfoShortDescription.cs]
 Atomový čítač s PICem
